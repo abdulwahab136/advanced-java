@@ -40,7 +40,7 @@ public class TimezoneConverterController {
         ZonedDateTime utcZonedTime = localZonedTime.withZoneSameInstant(UTC_ZONE);
 
 
-        //presentationTimes.add("Local Time: " + localZonedTime.format(TIME_FORMATTER));
+
         presentationTimes.add("Eastern Time: " + etZonedTime.format(TIME_FORMATTER));
         presentationTimes.add("Mountain Time: " + mtZonedTime.format(TIME_FORMATTER));
         presentationTimes.add("UTC: " + utcZonedTime.format(TIME_FORMATTER));

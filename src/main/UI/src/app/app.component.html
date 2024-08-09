@@ -31,8 +31,18 @@
 
 
       <div class="row">
+        <div class="col-12" *ngIf="presentationTimes && presentationTimes.length >= 3">
+          <p> Join us for an online live presentation held at Landon Hotel on August 9th, 2024 at following time</p>
+          <p> US/Eastern: {{presentationTimes[0]}}</p>
+          <p> US/Mountain: {{presentationTimes[1]}}</p>
+          <p> Universal Time: {{presentationTimes[2]}}</p>
+        </div>
+      </div>
+      <div class="row">
         <div class=""col-12>
-          <div class="gallery">
+
+
+        <div class="gallery">
             <img src="assets/images/intro_room.jpg" alt="Intro Gallery Room Sample Pictures">
             <img src="assets/images/intro_pool.jpg" alt="Intro Gallery Pool Sample Pictures">
             <img src="assets/images/intro_dining.jpg" alt="Intro Gallery Dining Sample Pictures">
